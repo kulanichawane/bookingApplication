@@ -1,0 +1,61 @@
+page-signup {
+
+  
+
+    .top{
+        height: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bottom{
+        height: 15em;
+        background: rgb(245, 235, 235);
+
+    }
+    .bg{
+
+       color:#EDECED;
+    }
+    ion-slides{
+        height: 50%;
+        position: absolute;
+        margin-bottom: 20%;
+    }
+
+.t{
+    height: 50%;
+    background:	#4421BC;
+    color:	#4421BC;
+    border-radius: 0 0 0 50%/80px  ;
+}
+ion-input{
+margin-left: auto;
+margin-right: auto;
+    color: rgb(12, 12, 12);
+    width: 80%;
+    border: 2px solid	#4421BC;
+    border-radius: 50px;
+}
+button{
+    width: 80%;
+    border-radius: 50px;
+}
+  h1{
+position: absolute;
+align-content: center;
+  }
+
+  img{
+
+right:0;
+
+display: block;
+
+
+
+  
+  }
+  
+}

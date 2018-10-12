@@ -1,0 +1,76 @@
+page-book {
+
+    .back{
+        position: relative;
+        left: 10%;
+        opacity: 0.8;
+    }
+    .forward{
+        position: relative;
+        left: 80%;
+     opacity: 0.8;
+    }
+    .number{
+        margin-top: -35px;
+    }
+    .ion-iconx{
+        color: rgb(12, 11, 11);
+        height: 20%;
+
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        // margin-top: 30%;
+    }
+    .bg{
+       // background: url('../../assets/imgs/black-and-white-abstract-blur-blurred-hd-city-wallpapers-places-landscape-cool-city-images-amazing-photo-shot-widescreen-images-best-town-background-5616x3744.jpg');
+        background-size: cover;
+        color: black;
+        background:#EDECED;
+    }
+
+    .card{
+  
+        color:rgb(238, 228, 228);
+        background:  	#4421BC;
+    
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.459);
+    }
+
+    .button{
+      
+   width: 99%;
+   margin-right: auto;
+   
+        color: white;
+         
+    }
+    .heading{
+        font-size: 12px;
+    }
+    ion-item{
+
+        opacity: 0.5;
+    }
+
+    .line{
+    
+        width: 80%
+        ;
+        background: rgba(0, 0, 0, 0.315);
+        height: 1px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container{
+        height: 5%;
+    }
+    .ion-grid{
+        align-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,65 @@
+page-hotels {
+    .card-background-page {
+
+        ion-card {
+          position: relative;
+          text-align: left;
+        }
+      
+     /*    .card-title {
+          position: absolute;
+          top: 36%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        } */
+      
+      /*   .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff; */
+        }
+      
+      }
+      #bg{
+        background: url('../../assets/imgs/Black_background.jpg');
+        background-size: cover;
+        color: #fff;
+
+      .con{
+
+        display:inline-block;
+      }
+      .bg{
+          background-color: rgba(0, 0, 0, 0.884);
+      }
+      .bbg{
+        
+          background-color: whitesmoke;
+     
+      }
+      .heada{
+        background: #8FC325;
+      }
+      .p1{
+        color: white;
+      }
+
+      .left{
+        float: left;
+      }
+
+      h1{
+        font-size:10px;
+
+      }
+
+
+      img{
+        width: 20%;
+        height: 20%;
+      }
+}

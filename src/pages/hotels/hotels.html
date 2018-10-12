@@ -1,0 +1,212 @@
+<!--
+  Generated template for the HotelsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+
+</ion-header>
+
+
+<ion-content class="card-background-page">
+  <ion-fab top right>
+    <button ion-fab mini color="purple">
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-fab-list>
+      <button ion-fab>
+        <ion-icon name="home"></ion-icon>
+      </button>
+      <button ion-fab (click)="account()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+      <button ion-fab>
+        <ion-icon name="power" (click)="signout()"></ion-icon>
+      </button>
+
+
+    </ion-fab-list>
+  </ion-fab>
+  <h1 align="center">Hotels</h1>
+  <div padding>
+    <h3>Ratings</h3>
+    <ion-segment color="purple" [(ngModel)]="pet">
+      <ion-segment-button value="twoStarx">
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="threeStarx">
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="fourStarx">
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+        <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+      </ion-segment-button>
+
+    </ion-segment>
+
+
+  </div>
+
+  <div [ngSwitch]="pet" class="heada">
+    <ion-list *ngSwitchCase="'twoStarx'">
+
+
+      <!--     <ion-card *ngFor ="let x of twoStar; let a = index" (click)="view(a)">
+            <img src='{{x.imageUrl}}'/>
+            <div class="card-title">{{x.name}}</div>
+            <div class="card-subtitle">R{{x.price}}/p<br>
+              Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.
+              <ion-icon name="star" style="zoom: 0.5"></ion-icon>   <ion-icon name="star" style="zoom: 0.5"></ion-icon>
+            </div>
+          </ion-card> -->
+      <ion-card *ngFor="let x of twoStar; let a = index" (click)="view(a)">
+        <img width="100px" src='{{x.imageUrl}}' />
+        <ion-card-content>
+          <ion-card-title>
+
+          </ion-card-title>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col col-9>
+                <p> {{x.name}}</p>
+                <p> Pretoria Glen street</p>
+                <p> Pretoria Glen street</p>
+              </ion-col>
+              <ion-col>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 1.0"></ion-icon>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 1.0"></ion-icon>
+
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <p>
+
+
+          </p>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col col-9>
+                <h1> R{{x.price}} </h1>
+              </ion-col>
+              <ion-col>
+                <p>Good </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'threeStarx'">
+      <!--   <ion-card *ngFor ="let x of threeStar; let a = index" (click)="view2(a)">
+            <img src="{{x.imageUrl}}"/>
+            <div class="card-title">{{x.name}}</div>
+            <div class="card-subtitle">R{{x.price}}/p<br>
+              Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy</div>
+          </ion-card> -->
+      <ion-card *ngFor="let x of threeStar; let a = index" (click)="view2(a)">
+        <img src='{{x.imageUrl}}' />
+        <ion-card-content>
+          <ion-card-title>
+
+          </ion-card-title>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col col-9>
+                <p> {{x.name}}</p>
+                <p> Pretoria Glen street</p>
+                <p> Pretoria Glen street</p>
+              </ion-col>
+              <ion-col>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 1.0"></ion-icon>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 1.0"></ion-icon>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 1.0"></ion-icon>
+
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <p>
+
+
+          </p>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col col-9>
+                <h1> R{{x.price}} </h1>
+              </ion-col>
+              <ion-col>
+                <p>Good </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-list>
+    <ion-list *ngSwitchCase="'fourStarx'">
+      <!--   <ion-card  *ngFor ="let x of fourStar; let a = index" (click)="view3(a)">
+              <img src='{{x.imageUrl}}'/>
+            <div class="card-title">{{x.name}}</div>
+            <div class="card-subtitle">R{{x.price}}/p<br>
+              Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</div>
+          </ion-card> -->
+      <ion-card *ngFor="let x of fourStar; let a = index" (click)="view3(a)">
+        <img src='{{x.imageUrl}}' />
+        <ion-card-content>
+          <ion-card-title>
+
+          </ion-card-title>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col col-9>
+                <p> {{x.name}}</p>
+                <p> Pretoria Glen street</p>
+                <p> Pretoria Glen street</p>
+              </ion-col>
+              <ion-col>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 0.9"></ion-icon>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 0.9"></ion-icon>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 0.9"></ion-icon>
+                <ion-icon class="left" color="purple" name="star" style="zoom: 0.9"></ion-icon>
+
+
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <p>
+
+
+          </p>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col col-9>
+                <h1> R{{x.price}} </h1>
+              </ion-col>
+              <ion-col>
+                <p>Good </p>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+  </div>
+
+</ion-content>

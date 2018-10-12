@@ -1,0 +1,96 @@
+page-view {
+
+    .head{
+        color: aliceblue;
+        background: 	#8FC325;
+    font-size: 12px;
+
+    padding-top: -15px;
+    padding: 10px;
+    
+    }
+
+    h1{
+        font-size: 20px;
+        color:rgba(0, 0, 0, 0.63);
+        color: 	#4421BC;
+        letter-spacing: 3px;
+
+    }
+    .subhead{
+      
+   color: whitesmoke;
+   font-size: 12px;
+    }
+
+    .button{
+        width:  100%;
+    }
+
+    .bottom{
+        height: 10%;
+        background: rgb(211, 202, 202);
+    }
+    .top{
+        height: 20%;
+      background:#EDECED;
+    }
+
+    .bg{
+        background: url('../../assets/imgs/Black_background.jpg');
+        background-size: cover;
+
+    }
+    .button{
+     
+        margin-top: 21%;
+
+margin-right: auto;
+    width: 99%;
+        color: white;
+    
+         
+    }
+
+    .ion-iconx{
+        color: rgb(12, 11, 11);
+        height: 20%;
+
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        // margin-top: 30%;
+    }
+    .ion-iconz{
+    
+     
+
+        position: absolute;
+        top: 47%;
+        left: 80%;
+        // margin-top: 30%;
+       
+    }
+   .imgx{
+position: absolute;
+left:70%;
+   }
+   .ion-item{
+       background: rgba(243, 243, 243, 0.164);
+       color: whitesmoke;
+       font-size: 12px;
+   }
+   
+   img{
+     
+   }
+
+h3{
+    font-size: 15px;
+    color: grey
+}
+.bg{
+    background:#EDECED;
+}
+
+}
